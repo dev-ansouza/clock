@@ -3,7 +3,7 @@ const minutes = document.getElementById("minutes");
 const seconds = document.getElementById("seconds");
 const body_clock = document.getElementById('body_clock');
 const dateToday = new Date();
-const watch = setInterval(function time () {
+const clock = setInterval(function time () {
     const dateToday = new Date();
     dateToday.toLocaleDateString("en-US", {timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone});
     
@@ -17,5 +17,5 @@ const watch = setInterval(function time () {
 })
 
 if(dateToday.getHours() > 18 || dateToday.getHours() < 6){
-    body_clock.style["backgroundImage"] = "url(\"/watch/assets/images/night.jpg\")";
+    body_clock.style["backgroundImage"] = "url(\"../assets/images/night.jpg\")";
 }
