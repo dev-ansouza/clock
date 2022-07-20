@@ -17,5 +17,5 @@ const watch = setInterval(function time () {
 })
 
 if(dateToday.getHours() > 18 || dateToday.getHours() < 6){
-    body_clock.style["backgroundImage"] = "url(\"../watch/assets/images/night.jpg\")";
+    body_clock.style["backgroundImage"] = "url(\"/watch/assets/images/night.jpg\")";
 }
